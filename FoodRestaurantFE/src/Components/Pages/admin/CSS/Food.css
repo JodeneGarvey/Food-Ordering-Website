@@ -1,0 +1,75 @@
+.food-display-page {
+  min-height: 100vh;
+  background: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.food-display-card {
+  width: 100%;
+  max-width: 650px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.food-display-card h1 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.food-display-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.food-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.food-form input,
+.food-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.food-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.food-form select {
+  width: 100%;
+  padding: 14px 16px;
+  outline: none;
+}
+
+
+.food-form button {
+  border: none;
+  background: #111;
+  color: #fff;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.food-form button:hover {
+  background: #222;
+}
+
+.food-message {
+  margin-top: 18px;
+  font-weight: 600;
+  color: green;
+}

@@ -1,0 +1,94 @@
+.hours-banner {
+  background: #f9f9f9; /* better contrast */
+  color: white;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.hours-content h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* GRID instead of flex (better responsiveness) */
+.hours-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.day {
+  background: white;
+  color: black;
+  padding: 25px 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.day span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.day p {
+  font-size: 16px;
+}
+
+/* HOVER */
+.day:hover {
+  transform: translateY(-5px);
+  background: #ff6600;
+  color: white;
+}
+
+.day:hover span,
+.day:hover p {
+  color: white;
+}
+
+/* ========================= */
+/* ✅ TABLET (2 columns) */
+/* ========================= */
+@media (max-width: 992px) {
+  .hours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hours-content h2 {
+    font-size: 28px;
+  }
+}
+
+/* ========================= */
+/* ✅ MOBILE (1 column) */
+/* ========================= */
+@media (max-width: 600px) {
+  .hours-banner {
+    padding: 40px 20px;
+  }
+
+  .hours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hours-content h2 {
+    font-size: 22px;
+  }
+
+  .day {
+    padding: 20px;
+  }
+
+  .day span {
+    font-size: 16px;
+  }
+
+  .day p {
+    font-size: 14px;
+  }
+}

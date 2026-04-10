@@ -1,0 +1,85 @@
+.orders {
+  padding: 30px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.orders-table th {
+  background: #000;
+  color: white;
+}
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* 🔥 clean spacing */
+}
+
+.viewitemsbutton{
+  padding: 6px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.delelebutton{
+    padding: 6px 12px;
+    border: none;
+    background: #d10c0c;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* MODAL */
+.items-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.items-content table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.items-content th,
+.items-content td {
+  padding: 10px;
+  text-align: center;
+}
+
+.items-content button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

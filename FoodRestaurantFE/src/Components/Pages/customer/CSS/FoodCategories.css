@@ -1,0 +1,66 @@
+.cat {
+  padding: 30px;
+  background: #f5f6fa;
+}
+
+.cat h1 {
+  margin-bottom: 20px;
+  text-align: center; /* optional */
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center; /* helps center content */
+}
+
+.cat-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cat-card h3 {
+  margin: 10px 0;
+}
+
+.cat-footer {
+  display: flex;
+  justify-content: center; /* ✅ THIS centers button */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cat-footer button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ✅ correct hover */
+.cat-footer button:hover {
+  background: #ff6600;
+  transform: translateY(-3px);
+}
+
+
+.cat-card {
+  text-align: center;
+}
+
+.cat-card button {
+  margin-top: 10px;
+}

@@ -1,0 +1,76 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+.profile-card {
+  width: 300px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profile-body {
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 15px;
+}
+
+.info span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+}
+
+.info p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}

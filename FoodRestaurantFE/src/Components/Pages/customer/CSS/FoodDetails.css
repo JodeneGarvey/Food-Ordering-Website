@@ -1,0 +1,120 @@
+.food-details {
+  padding: 40px;
+  background: #f5f6fa;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-card {
+  display: flex;
+  gap: 40px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.food-card img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.food-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.food-info h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.food-info h2 {
+  margin-bottom: 20px;
+  color: #555;
+}
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.quantity-container button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quantity-container span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quantity-container button:hover {
+  background: #ff6600;
+}
+
+.add-cart-btn {
+  padding: 12px 20px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-cart-btn:hover {
+  background: #ff6600;
+}
+
+.backmenu{
+  display:flex;
+  flex-direction: column;
+  min-height: 500px;
+  bottom: 0;
+  left: 0;
+}
+.backtomenubutton{
+  padding: 12px 20px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.backtomenubutton:hover{
+  background:#ff6600;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .food-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-card img {
+    width: 100%;
+  }
+}

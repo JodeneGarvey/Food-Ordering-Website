@@ -1,0 +1,85 @@
+.dashboard {
+  padding: 30px;
+  text-align: center;
+}
+
+.dashboard h1 {
+  margin-bottom: 30px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.card h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* COLORS */
+.card.food {
+  background: #28a745;
+}
+
+.card.customers {
+  background: #007bff;
+}
+
+.card.orders {
+  background: #ffc107;
+  color: black;
+}
+
+.card.sales {
+  background: #dc3545;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.orders-title {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.orders-table th {
+  background: black;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}

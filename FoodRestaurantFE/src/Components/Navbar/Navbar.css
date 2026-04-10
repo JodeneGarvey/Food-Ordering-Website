@@ -1,0 +1,134 @@
+.navbar {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  position: relative;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a,
+.nav-right a,
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-right a:hover,
+.mobile-menu a:hover {
+  color: #ff6600;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-icon {
+  font-size: 1rem;
+}
+
+.cart-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -25px;   /* move above */
+  right: -3px; /* move to right corner */
+  
+  
+  color: #ff6600;
+  font-size: 13px;
+  font-weight: bold;
+  
+  border-radius: 50%;
+  padding: 3px 7px;
+  min-width: 18px;
+  text-align: center;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 40px;
+  gap: 18px;
+  z-index: 1000;
+}
+.username {
+  font-weight: bold;
+  color: #fff;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.mobile-logout {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .mobile-menu {
+    padding: 20px;
+  }
+}

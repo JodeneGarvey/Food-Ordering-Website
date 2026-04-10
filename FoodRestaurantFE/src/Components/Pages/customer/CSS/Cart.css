@@ -1,0 +1,113 @@
+.cart {
+  padding: 30px;
+  background: #f5f6fa;
+}
+
+.cart h1 {
+  margin-bottom: 20px;
+}
+
+/* TABLE */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cart-table th {
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+}
+
+.cart-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-table tr:hover {
+  background: #f9f9f9;
+}
+
+/* IMAGE */
+.cart-table img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* BUTTON */
+.cart-table button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-table button:hover {
+  background: #e60000;
+}
+
+/* TOTAL */
+.cart-total {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-total h2 {
+  color: #000;
+}
+.place-order-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background: #e65c00;
+}
+
+.delivery-section {
+  margin: 20px 0;
+}
+
+.delivery-section select,
+.delivery-section input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.cart-buttons{
+  display: flex;
+  justify-content: inline-content;
+  gap: 750px; /* 🔥 clean spacing */
+}
+.continue-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  gap: 50px;
+}
+
+.continue-btn:hover {
+  background: #ff6600;
+}
